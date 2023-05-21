@@ -20,6 +20,35 @@ Hay {} numeros impares'''.format(len(numPares), sum(numPares),len(numImpares)))
 # 2. Leer 10 números y obtener la cantidad de mayores y la cantidad de menores a 100, cuál es el número máximo y cuál
 # es el número mínimo.
 
+max = 100
+min = 100
+cantMenos100 = 0
+cantMayores100 = 0
+cantVueltas = 0
+
+while cantVueltas < 10:
+    numIngresado = int(input('Ingrese el numero solicitado: '))
+    if numIngresado < 100:
+        cantMenos100 += 1
+        if numIngresado < min:
+            min = numIngresado
+    elif numIngresado > 100:
+        cantMayores100 +=1
+        if numIngresado > max:
+            max = numIngresado
+    cantVueltas +=1
+
+if cantMayores100 == 0:
+    cantMayores100 = 'No hubo numeros mayores a 100'
+
+if cantMenos100 == 0:
+    cantMenos100 = 'No hubo numeros menores a 100'
+
+print('''
+La cantidad de mayores a 100 es: {}
+La cantidad de menores a 100 es: {}
+El numero maximo es: {}
+El numero minimo es: {}'''.format(cantMayores100, cantMenos100, max, min))
 
 # 3. Ingresar las edades y el sexo de 15 personas y determinar cuántas son mujeres, cuántos varones, cuántos mayores
 # de edad y cuántos menores de edad.
