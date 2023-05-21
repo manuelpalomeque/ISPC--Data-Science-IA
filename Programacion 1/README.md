@@ -1,1 +1,1 @@
-<h6>Programación 1</h6>
+<h> Programación 1 </h>
