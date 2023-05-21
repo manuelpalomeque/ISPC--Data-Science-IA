@@ -80,7 +80,20 @@ La cantidad de Mujeres es: {}
 La cantidad de varones es: {}'''.format(mayoresEdad, menoresEdad, cantFem, cantMasc))
 
 # 4. Leer 10 números y mostrar solamente los números positivos, y su sumatoria.
+numPositivos = []
+contIngresados = 0
+sumPositivos = 0
 
+while contIngresados < 10:
+    numIngresado4 = int(input('ingrese numero: '))
+    if numIngresado4 > 0:
+        sumPositivos += numIngresado4
+        numPositivos.append(numIngresado4)
+    contIngresados += 1
+
+print('''
+Los numeros positivos son: {}
+La sumatoria de los numeros positivos es: {}'''.format(numPositivos, sumPositivos))
 
 # 5. Leer 15 números negativos y convertirlos a positivos e imprimir dichos números.
 
