@@ -96,4 +96,14 @@ Los numeros positivos son: {}
 La sumatoria de los numeros positivos es: {}'''.format(numPositivos, sumPositivos))
 
 # 5. Leer 15 números negativos y convertirlos a positivos e imprimir dichos números.
+numIngresados5 = 0
+numConvertidos = []
 
+while numIngresados5 < 15:
+    abc = int(input('Ingrese numero: '))
+    if abc < 0:
+        de = abc * -1
+        numConvertidos.append(de)
+    numIngresados5 += 1
+
+print('Los numeros convertidos a positivos son: {} '.format(numConvertidos))
