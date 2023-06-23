@@ -42,3 +42,11 @@ comparar(7,7)
 # 5. Realice un programa que contenga una función que se llame “sumayresta”, que la misma contenga dos
 # variables locales nombradas suma y resta, respectivamente. Recuerda: en estos ejercicios trabajamos
 # argumentos para este ejercicio sería dos.
+def sumayresta(n1,n2):
+    suma = n1 + n2
+    resta = n1 -n2
+    print('''
+    El Resultado de la suma es: {}
+    El resultado de la resta es: {}'''.format(suma,resta))
+
+sumayresta(7,8)
