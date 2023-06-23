@@ -31,7 +31,13 @@ suma(4,5,7)
 
 # 4. Realice un programa que lea dos números (dos parámetros), compare si son IGUALES, en ese caso,
 # mostrar un mensaje que muestre TRUE.
+def comparar(x,y):
+    if x ==y:
+        print('TRUE')
+    else:
+        print('FALSE')
 
+comparar(7,7)
 
 # 5. Realice un programa que contenga una función que se llame “sumayresta”, que la misma contenga dos
 # variables locales nombradas suma y resta, respectivamente. Recuerda: en estos ejercicios trabajamos
