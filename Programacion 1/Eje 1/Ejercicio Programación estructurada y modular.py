@@ -23,7 +23,11 @@ sNombre('Ana', 'Martin','Claudia')
 
 # 3. Realizar un programa de funciones que contengan 3 parámetros, el cual derive en una suma. Mostrar
 # el resultado dos veces.
+def suma(v1,v2,v3):
+    c =v1 +v2
+    print(c)
 
+suma(4,5,7)
 
 # 4. Realice un programa que lea dos números (dos parámetros), compare si son IGUALES, en ese caso,
 # mostrar un mensaje que muestre TRUE.
