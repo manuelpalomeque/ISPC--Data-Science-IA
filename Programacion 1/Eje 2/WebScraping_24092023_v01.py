@@ -11,7 +11,19 @@ import lxml
 # Extraere el titulo y el contenido
 
 # Definir en la variable "website", la web en la que voy a trabajar
-website = 'https://subslikescript.com/movie/Titanic-120338'
+paginaWeb = 'https://subslikescript.com/movie/Titanic-120338'
 
 # enviar una solicitud a la pagina y almacenarla en una variable
-result = requests.get(website)
+resultado = requests.get(paginaWeb)
+
+# Obtendre el textro del resultado y lo guardo en una variable. El ".text" es como se obtiene
+contenido = resultado.text
+
+# Variable "soup", que permitira encontrar elementos en una pagina web. El parser obtiene el codigo html de la
+# respuesta que obtuvimos
+soup = BeautifulSoup(contenido,'lxml')
+
+# Nos muestra el codigo html pero dificil de leer:
+# print(soup)
+# se recomienda usar .prettify para mejorar la visualizacion:
+print(soup.prettify())
