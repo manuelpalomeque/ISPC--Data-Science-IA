@@ -47,3 +47,5 @@ print('El guion es: {}'.format(nombreGuion1))
 
 #4  Exportar lo extraido en un archivo de texto ---------------------------------------
 
+with open('Titanic.txt', 'w', encoding='utf-8') as archivo:
+    archivo.write(nombreGuion1)
